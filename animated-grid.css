@@ -1,0 +1,79 @@
+
+.animated-grid {
+  margin-top: 120px;
+  height: 85vh;
+
+  display: grid;
+  gap: 1rem;
+
+  /* explicit grid */
+
+  grid-template-areas: 
+  "a b c d"
+  "l main main e"
+  "k main main f"
+  "j i h g";
+
+  grid-template-rows: repeat(4, 25%);
+  grid-template-columns: 240px auto auto 240px;
+}
+
+
+.card:nth-child(1){
+  grid-area: a;
+}
+
+.card:nth-child(2){
+  grid-area: b;
+}
+
+.card:nth-child(3){
+  grid-area: c;
+}
+
+.card:nth-child(4){
+  grid-area: d;
+}
+
+.card:nth-child(5){
+  grid-area: e;
+}
+
+.card:nth-child(6){
+  grid-area: f;
+}
+
+.card:nth-child(7){
+  grid-area: g;
+}
+
+
+.card:nth-child(8){
+  grid-area: h;
+}
+
+
+.card:nth-child(9){
+  grid-area: i;
+}
+
+
+.card:nth-child(10){
+  grid-area: j;
+}
+
+
+.card:nth-child(11){
+  grid-area: k;
+}
+
+
+.card:nth-child(12){
+  grid-area: l;
+}
+
+
+
+.card:last-child{
+  grid-area: main;
+}
